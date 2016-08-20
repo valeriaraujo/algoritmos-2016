@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include  "conio.h"
+#define MAX 100
+#define AFP 0.121
+#define IVA 0.13
+
+using namespace std;
+
+void main()
+{   
+	float salaNet, salaBrut;
+	int N;
+	do{
+		cout<<"Ingrese el numero de empleados: ";
+cin>>N;
+	}while((N>MAX) ||(N<0));
+for(int i=0;i<N;i++)
+{cout<<"ingrese el sueldo bruto:";
+ cin>> salaBrut;
+ if(salaBrut>2*1850)
+	 salaNet=salaBrut-(salaBrut*(IVA+AFP));
+ else
+	 salaNet=salaBrut-salaBrut*(AFP);
+	 cout<<"El salario Neto es: "<<salaNet<<endl;
+}
+getch();
+}
