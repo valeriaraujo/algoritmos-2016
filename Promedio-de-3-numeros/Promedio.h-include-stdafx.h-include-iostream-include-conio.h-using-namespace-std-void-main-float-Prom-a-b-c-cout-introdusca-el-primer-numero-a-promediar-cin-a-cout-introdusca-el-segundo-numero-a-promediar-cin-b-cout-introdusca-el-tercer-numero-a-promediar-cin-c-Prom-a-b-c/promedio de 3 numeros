@@ -1,0 +1,20 @@
+// Promedio.h
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+
+{float Prom,a,b,c;
+cout<<"introdusca el primer numero a promediar ";
+cin>>a;
+cout<<"introdusca el segundo numero a promediar ";
+cin>>b;
+cout<<"introdusca el tercer numero a promediar ";
+cin>>c;
+Prom=(a+b+c)/3;
+cout<< "El Promedio es: "<<Prom;
+getch();
+}
